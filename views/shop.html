@@ -1,8 +1,10 @@
 <!--Repeat over your data and display it below -->
 
-<div class="product-grid__item   grid__item one-half large--one-third" >
+<div class="product-grid__item   grid__item one-half large--one-third" ng-repeat='product in products' >
+
 
     <!--Product Image-->
+    <img src="{{product.image}}" alt="" />
     <!--Product Image click Should redirect to the product-details section. remember to pass along the product id so you can make an api call
     to get the specific product details-->
     <a class="product-grid__product" >
